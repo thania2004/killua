@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Thania Gamarra</title>
+</head>
+<body>
+
+  <h1>Create an account</h1>
+
+<form type="text" class="fomulario" id="formulario">
+
+  <!--Grupo: Usuario-->
+  <div class="formulario__grupo" id="grupo__usuario">
+    <label for="usuario" class="formulario__label">Usuario</label>
+    <div class="formulario__grupo-input">
+      <input type="text"class="formulario__input" name="usuario" id="usuario" placeholder="Escribe tu nombre aquí">
+      <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+    </div>
+    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guión bajo.</p>
+
+  </div>
+
+
+  <!--Grupo: Nombre-->
+<div class="formulario__grupo" id="grupo__nombre">
+    <label for="nombre" class="formulario__label">Nombre</label>
+    <div class="formulario__grupo-input">
+      <input type="text"class="formulario__input" name="nombre" id="nombre" placeholder="Escribe tu nombre aquí">
+      <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+    </div>
+    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guión bajo.</p>
+
+  </div>
+
+  <!--Grupo: Apellidos-->
+<div class="formulario__grupo" id="grupo__apellidos">
+    <label for="nombre" class="formulario__label">Apellidos</label>
+    <div class="formulario__grupo-input">
+      <input type="text"class="formulario__input" name="apellidos" id="apellidos" placeholder="Escribe tu apellido aquí">
+      <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+    </div>
+    <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guión bajo.</p>
+
+  </div>
+
+  <!--Grupo: Contraseña-->
+  <div class="formulario__grupo" id="grupo__contraseña">
+    <label for="password" class="formulario__label">Contraseña</label>
+    <div class="formulario__grupo-input">
+      <input type="password" class="formulario__input" name="password" id="password">
+        <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+    </div>
+    <p class="formulario__input-error">La contraseña debe tener de 4 a 12 dígitos.</p>
+  </div>
+
+
+  <!--Grupo: Contraseña2-->
+  <div class="formulario__grupo" id="grupo__contraseña">
+    <label for="password2" class="formulario__label">Repetir contraseña</label>
+    <div class="formulario__grupo-input">
+      <input type="password" class="formulario__input" name="password2" id="password2">
+        <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+    </div>
+    <p class="formulario__input-error">Ambas contraseñas deben ser iguales...</p>
+  </div>
+
+
+
+
+
+  <!--Grupo: DNI-->
+  <div class="formulario__grupo" id="grupo__dni">
+    <label for="dni" class="formulario__label">DNI</label>
+    <div class="formulario__grupo-input">
+      <input type="text" class="formulario__input" name="dni" id="dni" placeholder="82892">
+        <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+    </div>
+    <p class="formulario__input-error">Verifique bien los datos de su DNI</p>
+  </div>
+
+<!--Grupo: Email-->
+<div class="formulario__grupo" id="grupo__email">
+  <label for="email" class="formulario__label">Correo Electrónico</label>
+  <div class="formulario__grupo-input" >
+    <input type="email" class="formulario__input" name="email" id="email" placeholder="correo@ejemplo.com">
+    <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+  </div>
+  <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+</div>
+
+<!--Grupo: número-->
+<div class="formulario__grupo" id="grupo__telefono">
+  <label for="telefono" class="formulario__label">Teléfono</label>
+  <div class="formulario__grupo-input">
+    <input type="numero" class="formulario__input" name="telefono" id="telefono" placeholder="292982617">
+    <mat-icon class="formulario__validacion-estado">cancel</mat-icon>
+
+  </div>
+  <p class="formulario__input-error">El teléfono solo puede contener numeros y el máximo son 14 digitos. </p>
+</div>
+
+<!--Grupo: Terminos y Condiciones-->
+<div class="formulario__grupo" id="grupo__terminos">
+  <label class="formulario__label">
+    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+    Al crear esta cuenta, aceptas las <a >Condiciones de uso</a> y el <a>Aviso de privacidad</a> de TanjiroWebpage
+  </label>
+</div>
+
+<div class="formulario__mensaje" id="formulario__mensaje">
+  <p><i class="fa-solid fa-circle-xmark"></i> <b>Error:</b>Por favor rellena el formulario correctamente</p>
+
+</div>
+
+<div class="formulario__grupo formulario__grupo-btn-enviar">
+  <button type="submit" class="formulario__btn">Crear cuenta</button>
+  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Tu cuenta ha sido creada con éxito</p>
+</div>
+</form>
+
+</body>
+</html>
